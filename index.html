@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JB Weather</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
+    
+    h1 {
+      text-align: center;
+    }
+    
+    .search-form {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .search-input {
+      padding: 10px;
+      width: 300px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+    
+    .search-button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    
+    .weather-info {
+      text-align: center;
+    }
+    
+    .weather-icon {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    
+    .weather-description {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    
+    @media (max-width: 480px) {
+      .search-input {
+        width: 100%;
+      }
+      
+      .search-button {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JB Weather</h1>
+    <form class="search-form">
+      <input class="search-input" type="text" id="zipCodeInput" placeholder="Enter Zip Code" />
+      <button class="search-button" type="button" onclick="getWeather()">Search</button>
+    </form>
+    <div id="weatherInfo" class="weather-info"></div>
+  </div>
+
+  <script>
+    function getWeather(gQRJjXt0QCLOsmbZML6po5DMMhM9nLUE) {
+      var zipCode = document.getElementById("zipCodeInput").value;
+      // Make an API request to retrieve weather information based on the zip code
+      // You'll need to use a weather API of your choice and retrieve the data
+      // Once you have the weather data, update the "weatherInfo" element with the relevant information
+    }
+  </script>
+</body>
+</html>
